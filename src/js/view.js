@@ -5,7 +5,6 @@ export let makeRow = (itemArray) => {
     let mainBody = document.getElementById('mainBody');
     let cost = itemArray.qty * itemArray.price;
     sum = sum + cost;
-    console.log(sum);
     let html = ` <tr>
     <th scope="row">
       <img src=${itemArray.img} alt="" class="img-fluid z-depth-0" >
