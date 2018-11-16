@@ -1,0 +1,32 @@
+
+
+img{
+    width: 180px;
+    height: auto;
+}
+
+#caroContainer{
+    position: relative;
+}
+
+#carouselSlidesOnly{
+    position: absolute;
+    top: 20%;
+}
+
+a{
+    color: black;
+}
+
+#pageTitle{
+    padding-top: 0.8em;
+    padding-bottom: 1.8em;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.bottomInfo{
+    text-decoration: underline;
+    color: black
+}
+

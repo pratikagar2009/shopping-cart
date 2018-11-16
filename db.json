@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Cenizas Men's Half Sleeves Polo Collort Neck Casual Tshirt/T-Shirt",
+      "style": "MS13KT1906",
+      "colour": "Red",
+      "img": "./src/image/tshirt1.jpg",
+      "size": "M",
+      "qty": "2",
+      "price": 200
+    },
+    {
+      "id": 2,
+      "title": "FINIVO FASHION Men Cotton Casual Shirt",
+      "style": "MS13KT1906",
+      "colour": "Navy Blue",
+      "img": "./src/image/shirt1.jpg",
+      "size": "S",
+      "qty": "1",
+      "price": 100
+    },
+    {
+      "id": 3,
+      "title": "Chromozome Men's Plain Regular Fit T-Shirt",
+      "style": "MS13KT1906",
+      "colour": "Black White Blue",
+      "img": "./src/image/tshirt2.jpg",
+      "size": "XS",
+      "qty": "3",
+      "price": 800
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping-Cart</title>
+</head>
+<body>
+  
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-8"> 
+        <div class="containerMain">
+          <h1 id="pageTitle">YOUR SHOPPING BAG</h1>
+          <div style="border-bottom: 2px solid grey" class="table-responsive">
+            <table class="table product-table">
+      
+              <thead class="mdb-color lighten-5">
+                <tr>
+                  <td> <strong>3</strong> ITEMS</td>
+                  <th class="font-weight-bold">
+                    
+                  </th>
+                  <th class="font-weight-bold">
+                    <strong>Size</strong>
+                  </th>
+                  <th></th>
+                  <th class="font-weight-bold">
+                    <strong>QTY</strong>
+                  </th>
+                  <th class="font-weight-bold">
+                        <strong>Price</strong>
+                      </th>
+                </tr>
+              </thead>
+              
+              <tbody id="mainBody">
+       
+            </table>
+      
+          </div>
+          
+          <div class="row">
+              <div class="col-4">
+                  <br>
+                  <p><strong>Need help <br> or have question?</strong></p><br>
+                  <p>Call Customer Service at <br> 1-800-555-5555</p><br>
+                  <p><a href="" class="bottomInfo" >Chat with one of <br> our stylists</a></p>
+                  <p><a href="" class="bottomInfo">See return <br> & exchange policy</a></p>
+                </div>
+            <div class="col-8">
+              
+
+
+                <table class="table">
+                    
+                    <tbody>
+                        <tr>
+                            
+                           <p> <td style="border: white">ENTER PROMOTION CODE <br> OR GIFT CARD</td> </p>
+                            <td style="text-align: end; border: white"><input aria-label="default" type="text" style="width: 200px"></input> <button style="width: 100px" type="button" class="btn btn-light">Apply</button>
+                                </td>
+                        </tr>
+
+                        <tr>
+                          <td ><strong>SUBTOTAL</strong></td>
+                          <td id="subtotal" style="text-align: end;"></td>
+</tr><tr>
+                          <td style="border:white "><strong>PROMOTION CODE JF10 APPLIED</strong></td>
+                          <td style="text-align: end;border: white">-$7.00</td>
+                        
+                </tr>
+                <tr>
+                    <td style="border: white"><strong>ESTIMATED SHIPPING*</strong> <br> <p>You qualify for free shipping <br> because your order is over $50*</p></td>
+                    <td style="text-align: end; border: white">FREE</td>
+</tr>
+<tr><td><strong  style="font-size: 1.5em">ESTIMATED TOTAL</strong><p>Tax will be applied during checkout</p></td><td id="estTotal" style="text-align: end;font-size: 1.5em"></td></tr>
+<tr><td></td><td></td></tr>
+
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+<div style="float: right;padding-bottom: 0.8em">
+<button type="button" class="btn btn-link" style="color: black;text-decoration: underline">CONTINUE SHOPPING</button>
+<button type="button" class="btn btn-dark">CHECKOUT</button>
+</div>
+
+</html></div>
+</div>
+
+<div class="col-3" id="caroContainer">
+    <div id="carouselSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+<div class="card">
+
+   <h4 class="card-title" style="text-align: center">TAKE A LOOK AT</h4>
+    <img class="card-img-top" src="./src/image/anf_176908_04_prod1.jpg" alt="Card image cap">
+    <div class="card-body">
+  
+     
+     
+        <button class="btn btn-light">VIEW DETAIL</button>
+  
+    </div>
+  
+  </div>
+  
+          </div>
+          <div class="carousel-item">
+            
+            <div class="card">
+                <h4 class="card-title" style="text-align: center">TAKE A LOOK AT</h4>
+                 <img class="card-img-top" src="./src/image/KIC_122-8321-0060-200_prod1.jpg" alt="Card image cap">
+                 <div class="card-body">
+                    <button class="btn btn-light">VIEW DETAIL</button>
+               
+                 </div>
+               
+               </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <h4 class="card-title" style="text-align: center">TAKE A LOOK AT</h4>
+                   <img class="card-img-top" src="./src/image/KIC_125-8655-2989-528_prod1.webp" alt="Card image cap">
+                   <div class="card-body">
+                 
+                     <button class="btn btn-light">VIEW DETAIL</button>
+                 
+                   </div>
+                 
+                 </div>
+          </div>
+        </div>
+      </div>
+</div>
+           </div>
+
+
+           
+<div
+class="modal fade"
+id="editModal"
+tabindex="-1"
+role="dialog"
+aria-labelledby="exampleModalLabel"
+
+aria-hidden="true">
+
+<div
+class="modal-dialog modal-dialog-centered"
+role="document">
+
+<div
+class="modal-content">
+
+<div
+class="modal-body">
+
+<div
+class="row">
+
+
+<div
+class="col-lg-6">
+
+<div
+class="container"
+id="modal-left">
+
+<hr>
+
+<h4
+class="h2-responsive product-name" >
+
+<strong id="editTitle"></strong>
+
+</h4>
+
+<h4
+class="h4-responsive">
+
+<span
+class="green-text">
+
+<strong id="editPrice"></strong>
+
+</span>
+
+</h4>
+
+<div
+class="card-body">
+
+<div
+class="row">
+
+<div
+class="col-md-6">
+
+<select
+class="md-form mdb-select colorful-select dropdown-primary" name="size">
+
+<option label="SIZE"
+value=""
+disabled selected>SIZE</option>
+
+<option label="XS"
+value="XS">XS</option>
+
+<option label="S"
+value="S">S</option>
+
+<option label="M"
+value="M">M</option>
+
+<option label="L"
+value="L">L</option>
+
+</select>
+
+</div>
+
+
+
+<div
+class="col-md-6">
+
+<select
+class="md-form mdb-select colorful-select dropdown-primary" name="qty">
+
+<option label="QTY"
+value=""
+disabled selected>QTY</option>
+
+<option label="1"
+value="1">1</option>
+
+<option label="2"
+value="2">2</option>
+
+<option label="3"
+value="3">3</option>
+
+</select> 
+
+</div>
+
+</div>
+<br>
+
+<div
+class="row">
+
+<div id="editButton"
+class="text-center">
+
+
+
+</div>
+
+
+
+<div
+class="text-center">
+
+<button
+type="button"
+class="btn btn-link btn-sm">See Product Details</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div
+class="col-lg-6">
+
+<div
+id="carousel-thumb"
+class="carousel slide carousel-fade carousel-thumbnails"
+data-ride="carousel">
+
+<div
+class="carousel-inner"
+role="listbox">
+
+<div
+class="carousel-item active" id="editImage">
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+</body>
